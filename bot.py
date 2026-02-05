@@ -9,7 +9,7 @@ API_ID = 12345678  # Replace with YOUR API_ID
 API_HASH = "your_api_hash_here"  # Replace
 BOT_TOKEN = "your_bot_token_here"  # Replace
 
-app = Client("twitter_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("twitter_bot", api_id=39932307, api_hash=39ade42ed144f07f9176517c884dcf30, bot_token=8219016374:AAG_IWiB2Xu3EkNEdJ1tviFeJ4bU8jZqKlI)
 
 @app.on_message(filters.command("start"))
 async def start(client: Client, message: Message):
