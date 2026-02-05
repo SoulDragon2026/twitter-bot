@@ -11,9 +11,7 @@ app = Client("twitter_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKE
 
 @app.on_message(filters.command("start"))
 async def start(client: Client, message: Message):
-    await message.reply("🔥 Twitter/X Video Downloader!
-Send me any Twitter video link!")
-
+    await message.reply("Twitter Video Downloader! Send Twitter link")
 @app.on_message(filters.text & ~filters.command("start"))
 async def download(client: Client, message: Message):
     url = message.text
